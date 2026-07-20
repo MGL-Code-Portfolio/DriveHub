@@ -1,0 +1,162 @@
+:root {
+    --dh-dark-navy: #071a33;
+    --dh-bg-body: #f8fafc;
+    --dh-aqua: #00a896;
+}
+
+.main-content.home-page {
+    flex-grow: 1;
+    margin-left: 80px;
+
+    width: auto !important;
+    min-width: 0;
+
+    padding: 0;
+    background-color: var(--dh-bg-body);
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.home-page > .row {
+    padding: 30px 30px 0;
+}
+
+.home-page > .row:last-of-type {
+    padding-bottom: 30px;
+}
+
+.home-section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--dh-dark-navy);
+}
+
+.home-page .card {
+    border-radius: 16px !important;
+    border: none !important;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-page .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.event-card-img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.highlight-card-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.driver-card-img {
+    height: 85px;
+    width: 85px;
+    object-fit: cover;
+}
+
+.btn-aqua {
+    background-color: var(--dh-aqua) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.btn-aqua:hover {
+    opacity: 0.9;
+    color: white !important;
+}
+
+.btn-follow {
+    border: 1px solid var(--dh-dark-navy) !important;
+    color: var(--dh-dark-navy) !important;
+    font-size: 0.8rem !important;
+    font-weight: 600;
+}
+
+.btn-follow:hover {
+    background-color: var(--dh-dark-navy) !important;
+    color: white !important;
+}
+
+.btn-add-friend {
+    width: 32px;
+    height: 32px;
+    background-color: #f1f5f9 !important;
+    color: var(--dh-dark-navy) !important;
+    border: none !important;
+    font-size: 1rem !important;
+    transition: all 0.2s ease;
+}
+
+.btn-add-friend:hover {
+    background-color: var(--dh-aqua) !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.activity-list .list-group-item {
+    border: none !important;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+    border-radius: 10px !important;
+    font-size: 0.9rem;
+    color: #334155;
+    padding: 12px 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.slider-container {
+    border-radius: 16px;
+}
+
+.slider-track {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: var(--dh-dark-navy) !important;
+    border: none !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    opacity: 0.85;
+}
+
+.slider-arrow:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05) !important;
+}
+
+.community-link-card {
+    background-color: var(--dh-dark-navy) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white !important;
+    cursor: pointer;
+    border: 2px dashed rgba(255, 255, 255, 0.2) !important;
+}
+
+.community-link-card:hover {
+    background-color: #0c1b2d !important;
+    border-color: var(--dh-aqua) !important;
+}
+
+.community-link-icon {
+    font-size: 2.5rem;
+    color: var(--dh-aqua);
+    margin-bottom: 10px;
+}

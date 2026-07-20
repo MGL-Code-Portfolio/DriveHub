@@ -1,0 +1,171 @@
+.my-events-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 0;
+}
+
+.my-events-section {
+  background: white;
+  padding: 32px 44px;
+  border-bottom: 1px solid #dfe4ea;
+  scroll-margin-top: 20px;
+}
+
+.section-heading {
+  margin-bottom: 22px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #071a33;
+}
+
+.section-heading p {
+  margin: 4px 0 0;
+  color: #64748b;
+}
+
+.my-events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.my-event-card {
+  border: 1px solid #dfe4ea;
+  background: white;
+}
+
+.my-event-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.my-event-content {
+  padding: 18px;
+}
+
+.event-title-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+}
+
+.my-event-content h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #071a33;
+}
+
+.my-event-content p {
+  margin: 7px 0;
+  color: #536176;
+  font-size: 0.9rem;
+}
+
+.my-event-content i {
+  color: #28c7c0;
+  margin-right: 8px;
+}
+
+.joined-details-btn {
+  width: 100%;
+
+  margin-top: 12px;
+
+  background: #0b9f94;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px;
+
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.joined-details-btn:hover {
+  background: #09877e;
+}
+
+.status-active,
+.status-warning {
+  padding: 5px 9px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.status-active {
+  background: #dff8e8;
+  color: #0f9d58;
+}
+
+.status-warning {
+  background: #fff2cc;
+  color: #b7791f;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e1e7ef;
+  margin: 14px 0;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  width: 72%;
+  height: 100%;
+  background: #0b9f94;
+}
+
+.event-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.leave-btn,
+.details-btn {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.leave-btn {
+  background: #ef1111;
+}
+
+.details-btn {
+  background: #0b9f94;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  color: white;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.edit-btn {
+  background: #0d6efd;
+}
+
+.delete-btn {
+  background: #e60000;
+}
+
+@media (max-width: 1100px) {
+  .my-events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,235 @@
+.events-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 0;
+}
+
+.create-event-btn {
+  border: none;
+  background: #28c7c0;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.create-event-btn:hover {
+  background: #22b3ad;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.events-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 0;
+  align-items: start;
+}
+
+.event-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.events-left-column,
+.events-main-column {
+  background: #ffffff;
+  padding: 32px 36px;
+  min-height: calc(100vh - 160px);
+}
+
+.events-left-column {
+  border-right: 1px solid #eef1f5;
+}
+
+.events-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.events-section-title h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0;
+  color: #071a33;
+}
+
+.joined-title {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #eef1f5;
+}
+
+.mini-events-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.mini-event-card {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 14px;
+  align-items: center;
+  border: 1px solid #eef1f5;
+  border-radius: 12px;
+  padding: 10px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.mini-event-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+.mini-event-card img {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mini-event-card h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0 0 3px;
+  color: #071a33;
+}
+
+.mini-event-card p {
+  font-size: 0.8rem;
+  margin: 0 0 5px;
+  color: #637083;
+}
+
+.mini-event-card span {
+  display: inline-block;
+  background: #e6faf8;
+  color: #0b9f94;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.view-all-btn {
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid #dfe4ea;
+  background: #ffffff;
+  color: #071a33;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.view-all-btn:hover {
+  background: #071a33;
+  border-color: #071a33;
+  color: #ffffff;
+}
+
+.upcoming-events-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.event-card {
+  border: 1px solid #eef1f5;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.event-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.event-card-content {
+  padding: 16px 18px;
+}
+
+.event-card h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #071a33;
+}
+
+.event-card p {
+  margin: 6px 0;
+  color: #536176;
+  font-size: 0.88rem;
+}
+
+.event-card i {
+  color: #28c7c0;
+  margin-right: 8px;
+}
+
+.details-btn {
+  width: 100%;
+  margin-top: 14px;
+  border: none;
+  color: #ffffff;
+  padding: 11px;
+  border-radius: 10px;
+  font-weight: 700;
+  background: #0b9f94;
+  transition: background 0.2s;
+}
+
+.details-btn:hover {
+  background: #098d83;
+}
+
+.leave-btn {
+  width: 100%;
+  margin-top: 14px;
+  border: none;
+  color: #ffffff;
+  padding: 11px;
+  border-radius: 10px;
+  font-weight: 700;
+  background: #ef1111;
+}
+
+@media (max-width: 1150px) {
+  .events-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-list {
+    grid-template-columns: 1fr;
+  }
+
+  .events-left-column {
+    border-right: none;
+    border-bottom: 1px solid #eef1f5;
+  }
+}

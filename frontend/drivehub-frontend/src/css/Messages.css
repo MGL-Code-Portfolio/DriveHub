@@ -1,0 +1,82 @@
+.messages-list {
+    width: 380px;
+    height: 100vh;
+
+    background-color: #ffffff;
+
+    overflow-y: auto;
+
+    flex-shrink: 0;
+}
+
+.chat-item {
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.chat-item:hover {
+    background-color: #f5f5f5;
+}
+
+.online-dot {
+    width: 14px;
+    height: 14px;
+
+    background-color: #28c76f;
+
+    border: 2px solid white;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+}
+
+.private-message-container {
+    height: 100vh;
+
+    flex-grow: 1;
+
+    background-color: #fafafa;
+}
+
+.chat-header {
+    background-color: white;
+}
+
+.chat-messages {
+    overflow-y: auto;
+}
+
+.message-bubble-me {
+    background-color: #28c7c0;
+
+    color: white;
+
+    padding: 12px 16px;
+
+    border-radius: 18px 18px 4px 18px;
+
+    max-width: 420px;
+}
+
+.message-bubble-other {
+    background-color: white;
+
+    padding: 12px 16px;
+
+    border-radius: 18px 18px 18px 4px;
+
+    max-width: 420px;
+
+    border: 1px solid #e9ecef;
+}
+
+.message-time {
+    opacity: 0.7;
+
+    font-size: 0.75rem;
+}

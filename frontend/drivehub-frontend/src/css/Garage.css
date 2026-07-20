@@ -1,0 +1,78 @@
+:root {
+    --dh-dark-navy: #131e2d;
+    --dh-bg-body: #f8fafc;
+    --dh-aqua: #00a896;
+}
+
+.main-content.garage-page {
+    margin-left: 80px;
+    padding: 0 !important;
+    background-color: var(--dh-bg-body);
+    min-height: 100vh;
+}
+
+.garage-stats-container {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    max-width: 550px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.garage-stat-divider {
+    height: 24px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.garage-section {
+    padding: 30px !important;
+}
+
+.card {
+    border-radius: 16px !important;
+    border: none !important;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-aqua {
+    background-color: var(--dh-aqua) !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* Botão de engrenagem estilizado */
+.btn-edit-vehicle {
+    width: 38px;
+    height: 38px;
+}
+
+.add-car-placeholder {
+    border: 2px dashed #cbd5e1 !important;
+    background-color: #f8f9fa !important;
+    min-height: 270px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-car-placeholder:hover {
+    border-color: var(--dh-aqua) !important;
+    background-color: #ffffff !important;
+}
+
+/* Círculo do botão de adicionar dentro do placeholder */
+.add-car-icon-wrap {
+    width: 44px;
+    height: 44px;
+    transition: all 0.2s ease;
+}
+
+.add-car-placeholder:hover .add-car-icon-wrap {
+    background-color: var(--dh-aqua) !important;
+    color: white !important;
+}
